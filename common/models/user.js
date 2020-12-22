@@ -205,6 +205,8 @@ module.exports = function(User) {
    */
 
   User.login = function(credentials, include, fn) {
+    debugger;
+    //wasim
     const self = this;
     if (typeof include === 'function') {
       fn = include;
