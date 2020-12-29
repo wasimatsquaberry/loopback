@@ -177,6 +177,9 @@ module.exports = function(Role) {
       return;
     }
     const modelClass = context.model;
+    if(context.modelId == "me") {
+      context.modelId = context.accessToken.userId;
+    }
     const modelId = context.modelId;
     const user = context.getUser();
     const userId = user && user.id;
