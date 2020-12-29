@@ -1,5 +1,10 @@
 {
   "name": "Role",
+  "options": {
+    "oracle": {
+      "table": "MIDAS_ROLE"
+    }
+  },
   "properties": {
 
     "id": {
